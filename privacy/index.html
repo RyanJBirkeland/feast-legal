@@ -94,7 +94,7 @@
     </ul>
 
     <h2>AI &amp; Third-Party Services</h2>
-    <p>We use Anthropic&rsquo;s API to power meal planning, nutrition analysis, and cooking assistance. Your dietary preferences and recipe interactions are sent to Anthropic to generate personalized responses. Anthropic does not use this data to train their models (per their API data usage policy).</p>
+    <p>We use Anthropic&rsquo;s API to power meal planning, nutrition analysis, and cooking assistance. Your dietary preferences, recipe interactions, and any recipe photos you submit to the AI scanner are sent to Anthropic to generate personalized responses. Feast does not store your photos. Anthropic does not use this data to train their models (per their API data usage policy).</p>
 
     <h2>Data Storage &amp; Security</h2>
     <p>Your data is stored securely in Supabase (hosted on AWS). We use row-level security (RLS) to ensure you can only access your own data. Authentication is handled via Supabase Auth with secure token management.</p>
@@ -102,8 +102,9 @@
     <h2>Data Sharing</h2>
     <p>We do not sell your personal data. We share data only with:</p>
     <ul>
-      <li><strong>Anthropic</strong> — dietary preferences for AI-powered features (no direct identifiers)</li>
+      <li><strong>Anthropic</strong> — dietary preferences, recipe context, and submitted recipe photos for AI-powered features (no direct identifiers)</li>
       <li><strong>Supabase</strong> — data storage and authentication</li>
+      <li><strong>RevenueCat</strong> — subscription state and purchase receipts, if you subscribe to Feast+</li>
       <li><strong>Instacart</strong> — grocery-list items, only when you choose to send a list</li>
       <li><strong>Sentry</strong> — crash and performance diagnostics</li>
     </ul>
